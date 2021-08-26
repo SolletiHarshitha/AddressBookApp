@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/Home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <title>Address Book App</title>
+    </head>
+    <body>
+        <header class="header-content header">
+            <div class="logo-content">
+                <img src="../assets/images/logo.jpg" alt="Logo">
+                <div>
+                    <span class="contact-txt">ADDRESS</span><br>
+                    <span class="contact-txt contact-book">BOOK</span>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <!--UC2-->
+            <div class="header-content">
+                <div class="person-detail-text">Person Details </div>
+                <a href="../pages/AddContact.html" class="add-button">
+                <img src="../assets/icons/add-24px.svg" alt="">Add Person</a>
+            </div>
+            <div class="table-main">
+                <table id="display" class="table">
+                    <!--UC3-->
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip Code</th>
+                        <th>Phone Number</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Varaza Mishra</td>
+                        <td>Marve Road, Next to Maniratna, Malad(west)</td>
+                        <td>Mumbai</td>
+                        <td>Maharashtra</td>
+                        <td>400064</td>
+                        <td>8976876576</td>
+                        <td>
+                            <img id="1" onclick="remove(this)" alt="delete" src="../assets/icons/delete-black-18dp.svg">
+                            <img id="1" alt="edit" onclick="update(this)" src="../assets/icons/create-black-18dp.svg">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
